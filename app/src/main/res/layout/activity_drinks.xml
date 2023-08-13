@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    tools:context=".drinks">
+
+    <Button
+        android:id="@+id/back3"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="350dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/custom_button"
+        android:text="Back"
+        android:textColor="#FFFCFC"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/limca"
+                android:layout_width="match_parent"
+                android:layout_height="1in"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <Button
+                    android:id="@+id/limca_2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="320dp"
+                    android:layout_marginTop="75dp"
+                    android:background="@drawable/custom_button"
+                    android:text="+"
+                    android:textColor="#ECE4E4"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/limca_1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="75dp"
+                    android:background="@drawable/custom_button"
+                    android:text="-"
+                    android:textColor="#ECE4E4"
+                    android:textSize="24sp"
+                    tools:ignore="DuplicateClickableBoundsCheck" />
+
+                <TextView
+                    android:id="@+id/limcaval"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="260dp"
+                    android:layout_marginTop="75dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="#070707"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:elevation="3dp"
+                    android:src="@drawable/limca" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:paddingLeft="1.1in"
+                    android:text="Limca"
+                    android:textColor="@color/blue"
+                    android:textSize="36sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fizz"
+                android:layout_width="match_parent"
+                android:layout_height="1in"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <Button
+                    android:id="@+id/fizz_1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="75dp"
+                    android:background="@drawable/custom_button"
+                    android:text="-"
+                    android:textColor="#ECE4E4"
+                    android:textSize="24sp"
+                    tools:ignore="DuplicateClickableBoundsCheck" />
+
+                <Button
+                    android:id="@+id/fizz_2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="320dp"
+                    android:layout_marginTop="75dp"
+                    android:background="@drawable/custom_button"
+                    android:text="+"
+                    android:textColor="#ECE4E4"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/fizzval"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="260dp"
+                    android:layout_marginTop="75dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="#070707"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:elevation="3dp"
+                    android:src="@drawable/fizz" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:paddingLeft="1.1in"
+                    android:text="Fizz "
+                    android:textColor="@color/blue"
+                    android:textSize="36sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/coke"
+                android:layout_width="match_parent"
+                android:layout_height="1in"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <Button
+                    android:id="@+id/coke_1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="75dp"
+                    android:background="@drawable/custom_button"
+                    android:text="-"
+                    android:textColor="#ECE4E4"
+                    android:textSize="24sp"
+                    tools:ignore="DuplicateClickableBoundsCheck" />
+
+                <Button
+                    android:id="@+id/coke_2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="320dp"
+                    android:layout_marginTop="75dp"
+                    android:background="@drawable/custom_button"
+                    android:text="+"
+                    android:textColor="#ECE4E4"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/cokeval"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="260dp"
+                    android:layout_marginTop="75dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="#070707"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:elevation="3dp"
+                    android:src="@drawable/coke" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:paddingLeft="1.1in"
+                    android:text="Coke "
+                    android:textColor="@color/blue"
+                    android:textSize="36sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sprite"
+                android:layout_width="match_parent"
+                android:layout_height="1in"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <Button
+                    android:id="@+id/sprite_1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="75dp"
+                    android:background="@drawable/custom_button"
+                    android:text="-"
+                    android:textColor="#ECE4E4"
+                    android:textSize="24sp"
+                    tools:ignore="DuplicateClickableBoundsCheck" />
+
+                <Button
+                    android:id="@+id/sprite_2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="320dp"
+                    android:layout_marginTop="75dp"
+                    android:background="@drawable/custom_button"
+                    android:text="+"
+                    android:textColor="#ECE4E4"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/spriteval"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="260dp"
+                    android:layout_marginTop="75dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="#070707"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:elevation="3dp"
+                    android:src="@drawable/sprite" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:paddingLeft="1.1in"
+                    android:text="Sprite"
+                    android:textColor="@color/blue"
+                    android:textSize="36sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/thumbsup"
+                android:layout_width="match_parent"
+                android:layout_height="1in"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <Button
+                    android:id="@+id/thumbsup_1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="75dp"
+                    android:background="@drawable/custom_button"
+                    android:text="-"
+                    android:textColor="#ECE4E4"
+                    android:textSize="24sp"
+                    tools:ignore="DuplicateClickableBoundsCheck" />
+
+                <Button
+                    android:id="@+id/thumbsup_2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="320dp"
+                    android:layout_marginTop="75dp"
+                    android:background="@drawable/custom_button"
+                    android:text="+"
+                    android:textColor="#ECE4E4"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/thumbsupval"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="260dp"
+                    android:layout_marginTop="75dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="#070707"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:elevation="3dp"
+                    android:src="@drawable/thumbsup" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:paddingLeft="1.1in"
+                    android:text="Thumbs Up"
+                    android:textColor="@color/blue"
+                    android:textSize="36sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/frooti"
+                android:layout_width="match_parent"
+                android:layout_height="1in"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <Button
+                    android:id="@+id/frooti_1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="75dp"
+                    android:background="@drawable/custom_button"
+                    android:text="-"
+                    android:textColor="#ECE4E4"
+                    android:textSize="24sp"
+                    tools:ignore="DuplicateClickableBoundsCheck" />
+
+                <Button
+                    android:id="@+id/frooti_2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="320dp"
+                    android:layout_marginTop="75dp"
+                    android:background="@drawable/custom_button"
+                    android:text="+"
+                    android:textColor="#ECE4E4"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/frootival"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="260dp"
+                    android:layout_marginTop="75dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="#070707"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:elevation="3dp"
+                    android:src="@drawable/frooti" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:paddingLeft="1.1in"
+                    android:text="Frooti"
+                    android:textColor="@color/blue"
+                    android:textSize="36sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/maaza"
+                android:layout_width="match_parent"
+                android:layout_height="1in"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <Button
+                    android:id="@+id/maaza_1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="75dp"
+                    android:background="@drawable/custom_button"
+                    android:text="-"
+                    android:textColor="#ECE4E4"
+                    android:textSize="24sp"
+                    tools:ignore="DuplicateClickableBoundsCheck" />
+
+                <Button
+                    android:id="@+id/maaza_2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="320dp"
+                    android:layout_marginTop="75dp"
+                    android:background="@drawable/custom_button"
+                    android:text="+"
+                    android:textColor="#ECE4E4"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/maazaval"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="260dp"
+                    android:layout_marginTop="75dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="#070707"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:elevation="3dp"
+                    android:src="@drawable/maaza" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:paddingLeft="1.1in"
+                    android:text="Maaza "
+                    android:textColor="@color/blue"
+                    android:textSize="36sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fanta"
+                android:layout_width="match_parent"
+                android:layout_height="1in"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <Button
+                    android:id="@+id/fanta_1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="75dp"
+                    android:background="@drawable/custom_button"
+                    android:text="-"
+                    android:textColor="#ECE4E4"
+                    android:textSize="24sp"
+                    tools:ignore="DuplicateClickableBoundsCheck" />
+
+                <Button
+                    android:id="@+id/fanta_2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="320dp"
+                    android:layout_marginTop="75dp"
+                    android:background="@drawable/custom_button"
+                    android:text="+"
+                    android:textColor="#ECE4E4"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/fantaval"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="260dp"
+                    android:layout_marginTop="75dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="#070707"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:elevation="3dp"
+                    android:src="@drawable/fanta" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:paddingLeft="1.1in"
+                    android:text="Fanta"
+                    android:textColor="@color/blue"
+                    android:textSize="36sp" />
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submit3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:text="Submit"
+        android:textColor="#F6F3F3"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
